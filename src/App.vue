@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="weather-app">
     <header>
-      <h1>🌤️ Weather Now</h1>
+      <h1>🌤️ Atividade pra ver o Clima</h1>
       <input
         type="text"
         v-model="city"
