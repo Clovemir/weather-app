@@ -41,13 +41,13 @@ export default {
   methods: {
     async fetchWeather() {
       if (!this.city) return;
-      const apiKey = "d5279129c31fa1556ad072072dc7c195"; // Insira sua API Key do OpenWeather
+      const apiKey = "d5279129c31fa1556ad072072dc7c195";
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&lang=pt_br&appid=${apiKey}`;
       try {
         const response = await axios.get(url);
         this.weatherData = response.data;
       } catch (error) {
-        alert("Erro ao buscar os dados. Verifique o nome da cidade!");
+        alert("Erro ao buscar previsões. Verifique o nome da cidade!");
         this.weatherData = null;
       }
     },
